@@ -26,11 +26,11 @@ author:
   avatar           : "profile.jpg"
   name             : "Abhishek Vijeev"
   # pronouns         : # example: "she/her"  
-  bio              : "PhD Student"
+  # bio              : "PhD Student"
   # location         : "Earth"
   # employer         : "Red Brick University"
   # uri              : # URL
-  # email            : "none@example.org" 
+  email            : "avijeev@cs.utexas.edu" 
 
   # Academic websites
   # academia         : # URL
@@ -46,6 +46,18 @@ author:
   # scopus           : # URL
   # zotero           : # URL
 
+  education:
+    # - degree: "Ph.D. in Computer Science"
+    #   institution: "University of Texas, Austin"
+    #   year: "2025"
+
+    - degree: "M.S. in Computer Science"
+      institution: "University of California, San Diego"
+      # year: "2021"
+
+    - degree: "B.Tech in Computer Science"
+      institution: "PES University"
+      # year: "2019"
 
   # Repositories and software development
   # bitbucket        : # Username - Update with your username on the site
