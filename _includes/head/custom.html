@@ -19,4 +19,13 @@
 <link rel="icon" href="/images/favicon.ico"/>
 <meta name="theme-color" content="var(--global-bg-color)"/>
 
+<script>
+  // Default to light mode unless the visitor has chosen a theme
+  const savedTheme = localStorage.getItem("theme");
+
+  if (savedTheme !== "light" && savedTheme !== "dark") {
+    localStorage.setItem("theme", "light");
+  }
+</script>
+
 <!-- end custom head snippets -->
