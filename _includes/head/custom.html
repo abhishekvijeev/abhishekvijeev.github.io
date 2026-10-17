@@ -20,12 +20,20 @@
 <meta name="theme-color" content="var(--global-bg-color)"/>
 
 <script>
-  // Default to light mode unless the visitor has chosen a theme
+window.addEventListener("load", function () {
   const savedTheme = localStorage.getItem("theme");
 
-  if (savedTheme !== "light" && savedTheme !== "dark") {
+  if (!savedTheme || savedTheme === "system") {
     localStorage.setItem("theme", "light");
+    document.documentElement.removeAttribute("data-theme");
+
+    const icon = document.getElementById("theme-icon");
+    if (icon) {
+      icon.classList.remove("fa-moon");
+      icon.classList.add("fa-sun");
+    }
   }
+});
 </script>
 
 <!-- end custom head snippets -->
