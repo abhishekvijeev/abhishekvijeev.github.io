@@ -37,3 +37,18 @@
     "layout/sidebar",
     "layout/json_cv"
 ;
+/* Fix profile picture on mobile only */
+@media screen and (max-width: 1023px) {
+  .sidebar .author__avatar {
+    width: 72px;
+    height: 72px;
+  }
+
+  .sidebar .author__avatar img {
+    width: 72px;
+    height: 72px;
+    max-width: none;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+}
