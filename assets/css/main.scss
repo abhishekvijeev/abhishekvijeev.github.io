@@ -64,15 +64,14 @@
 //   color: #1d4ed8;
 // }
 
-/* Remove outline when clicking publication links */
-.page__content a:focus:not(:focus-visible),
-.archive__item a:focus:not(:focus-visible) {
-  outline: none;
-  box-shadow: none;
+/* Remove focus boxes when clicking any link */
+a:focus:not(:focus-visible),
+a:active:not(:focus-visible) {
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 /* Remove mobile tap highlight */
-.page__content a,
-.archive__item a {
+a {
   -webkit-tap-highlight-color: transparent;
 }
