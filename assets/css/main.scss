@@ -52,3 +52,27 @@
     border-radius: 50%;
   }
 }
+
+// /* Custom link colors */
+// a,
+// a:visited {
+//   color: #2563eb;
+// }
+
+// a:hover,
+// a:focus {
+//   color: #1d4ed8;
+// }
+
+/* Remove outline when clicking publication links */
+.page__content a:focus:not(:focus-visible),
+.archive__item a:focus:not(:focus-visible) {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Remove mobile tap highlight */
+.page__content a,
+.archive__item a {
+  -webkit-tap-highlight-color: transparent;
+}

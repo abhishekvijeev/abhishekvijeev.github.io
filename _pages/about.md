@@ -23,7 +23,7 @@ Hi! I'm a PhD student in Computer Science at UT Austin, advised by [Prof. Vijay 
 }
 
 .home-publications .publication-title {
-  display: block;
+  display: inline;
   font-weight: 600;
   margin-bottom: 0.1rem;
 }
